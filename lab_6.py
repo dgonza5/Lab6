@@ -36,3 +36,30 @@ loop three times
     print the output (fruit) to the user 
 
 """
+
+import random
+
+def main():
+    for i in range(0, 3):
+        # print('i--->', i)
+        spin()
+
+def spin():
+    rand_um = random.randint(1, 20)
+    output = ""
+    if(rand_um > 15):
+        output = "Cherries"
+    elif(rand_um > 10):
+        output = "Orange"
+    elif(rand_um > 5):
+        output = "Plum"
+    elif(rand_um > 2):
+        output = "Melon"
+    elif(rand_um > 1):
+        output = "Bell"
+    else:
+        output = "Bar"
+    
+    print(output, end=" ")
+
+main()
